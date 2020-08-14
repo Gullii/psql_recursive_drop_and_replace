@@ -23,8 +23,8 @@ DATABASE = Databasename
 5. Any views that failed will be printed into an output file with the Exception and old SQL-Definiton to make it easier to create the view manually
 
 ## TODO
--Move all needed input to command line
--Fix exceptions for droped columns
--Optimize performance
+-Move all needed input to command line  
+-Fix exceptions for droped columns  
+-Optimize performance  
 
 

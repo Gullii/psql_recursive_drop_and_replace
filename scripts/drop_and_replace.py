@@ -84,7 +84,7 @@ def get_failed_views(view: ViewNode, view_status: dict) -> dict:
 
 
 def get_sql_code_from_file(filename: str, *parameters) -> str:
-    fd = open(f'drop_and_replace/sql/{filename}.sql')
+    fd = open(f'sql/{filename}.sql')
     sql = fd.read()
     sql = sql.format(*parameters)
     fd.close()

@@ -4,8 +4,8 @@ from scripts.drop_and_replace import create_view_node, add_dependant_view, drop_
 
 def main():
     # Replace variables view_name and schema
-    view_name = 'replace_this'
-    schema = 'replace_this'
+    view_name = input('Name of the view to replace:')
+    schema = input('Schema that holds the view:')
     # Replace the file content with the new definiton
     sql = get_sql_code_from_file('new_view_definition')
 
