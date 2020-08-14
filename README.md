@@ -14,13 +14,11 @@ HOST = Host address
 DATABASE = Databasename
 ```
 
-2. In `drop_and_replace_main.py` replace the variables `view_name` and `schema` with the name of the view you want to replace and the schema which holds the view.
+2. Replace the SQL in `new_view_definition.sql` with the new definiton of your view.
 
-3. Replace the SQL in `new_view_definition.sql` with the new definiton of your view.
+3. Run `drop_and_replace_main.py` and follow command line output
 
-4. Run `drop_and_replace_main.py` and follow command line output
-
-5. Any views that failed will be printed into an output file with the Exception and old SQL-Definiton to make it easier to create the view manually
+4. Any views that failed will be printed into an output file with the Exception and old SQL-Definiton to make it easier to create the view manually
 
 ## TODO
 -Move all needed input to command line  
