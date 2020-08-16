@@ -65,9 +65,11 @@ def print_failed_views(view: ViewNode):
 
     for x, y in failed_views.items():
         if y.failed_to_build:
-            print(f'''\n ---Failed to build view {y.schema}.{y.name}---\nException: {y.exception}\nSQL: {y.sql}\n''')
+            print(f'''\n ---Failed to build view {y.schema}.{y.name}---\nException: {y.exception}\nSQL:
+                        {y.sql_definition}\n''')
             out = open('output', 'a')
-            out.write(f'''\n ---Failed to build view {y.schema}.{y.name}---\nException: {y.exception}\nSQL: {y.sql}\n''')
+            out.write(f'''\n ---Failed to build view {y.schema}.{y.name}---\nException: {y.exception}\nSQL:
+                        {y.sql_definition}\n''')
             out.close()
 
 
